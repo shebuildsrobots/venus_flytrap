@@ -7,3 +7,5 @@ If you've never used an Arduino before, feel free to check out the beginner tuto
 The basic circuit is below. You'll want to solder extra-long legs onto the photoresistor or use hookup wires to integrate it into your venus flytrap.
 
 ![Circuit Diagram](https://github.com/user-attachments/assets/28a52663-ef5d-4161-be07-a8b0d1e3b83d)
+
+The code takes an average light reading of the room over 100 measurements at setup time. When a light reading sufficiently below the room average is found, the flytrap snaps closed. You can tune the amount of contrast it takes to trigger the flytrap by editing `LIGHT_DELTA_THRESHOLD`. If you're having trouble tuning the threshold, use the Serial Monitor to diagnose your readings.
