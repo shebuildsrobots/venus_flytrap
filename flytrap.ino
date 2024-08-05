@@ -3,7 +3,7 @@
 #define CLOSED 180
 #define OPEN 90
 // Tune me based on readings from the Serial Monitor!
-#define LIGHT_THRESHOLD 20
+#define LIGHT_THRESHOLD 35
 
 Servo servo;
 int lightVal = 0;
