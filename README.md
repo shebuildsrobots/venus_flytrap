@@ -8,4 +8,4 @@ The basic circuit is below. You'll want to solder extra-long legs onto the photo
 
 ![Circuit Diagram](https://github.com/user-attachments/assets/28a52663-ef5d-4161-be07-a8b0d1e3b83d)
 
-The code takes an average light reading of the room over 100 measurements at setup time. When a light reading sufficiently below the room average is found, the flytrap snaps closed. You can tune the amount of contrast it takes to trigger the flytrap by editing `LIGHT_DELTA_THRESHOLD`. If you're having trouble tuning the threshold, use the Serial Monitor to diagnose your readings.
+Rather than using static light threhold values, you could opt to take a light reading of the room, e.g. over 100 measurements and average them at setup time. When a light reading sufficiently below the room average is found, the flytrap could be edited to snap closed. If you're having trouble tuning the threshold, use the Serial Monitor to diagnose your readings.
